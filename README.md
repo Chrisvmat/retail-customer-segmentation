@@ -4,6 +4,8 @@ Customer segmentation web app using RFM analysis on the Online Retail dataset. C
 
 ---
 
+## 🔗 Deployed app: criz-custseg.streamlit.app
+
 ## 📁 Project Structure
 
 ```
