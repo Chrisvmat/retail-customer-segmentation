@@ -47,6 +47,9 @@ Transactions from a UK-based online retail store. Contains ~500K rows across 8 c
 | ⚠️ At Risk | Were active, now drifting | Win-back emails |
 | 💤 Lost / Dormant | Long inactive | Reactivation campaigns |
 
+<img width="1521" height="878" alt="image" src="https://github.com/user-attachments/assets/6a9bd4ed-6211-4e66-8fc4-030d513f3f7a" />
+
+
 ---
 
 ## 🚀 Running the App
