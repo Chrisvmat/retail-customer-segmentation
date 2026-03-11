@@ -32,7 +32,7 @@ html, body, [class*="css"] {
     padding: 2.5rem 0 1.5rem 0;
 }
 .title-block h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     letter-spacing: -0.03em;
     color: #ffffff;
@@ -225,24 +225,24 @@ def classify(recency, frequency, monetary):
     if R <= R_MED and F >= F_MED and M >= M_MED:
         return "VIP"
     elif R <= R_MED and F >= F_MED:
-        return "Loyal Customers"
+        return "Loyal Customer"
     elif R <= R_MED and F < F_MED:
-        return "Promising Customers (New)"
+        return "Promising / New"
     elif R > R_MED and F >= F_MED:
-        return "At Risk "
+        return "At Risk"
     else:
-        return "Dormant Customers"
+        return "Dormant"
 
 
 # ── UI ─────────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="title-block">
-    <h3>🛒 Customer Segmentation</h3>
+    <h1 style="font-size: 3.5rem;">🛒 Customer Segmentation</h1>
     <p>Enter RFM values to classify a customer into one of 5 segments</p>
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="input-card"><h3>RFM Inputs</h3>', unsafe_allow_html=True)
+#st.markdown('<div class="input-card"><h3>RFM Inputs</h3>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -261,7 +261,8 @@ with col3:
         help="Total amount spent by the customer"
     )
 
-st.markdown('</div>', unsafe_allow_html=True)
+#st.markdown('</div>', unsafe_allow_html=True)
+st.markdown("#### RFM Inputs")
 
 classify_btn = st.button("Classify Now!")
 
