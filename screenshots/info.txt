@@ -1,0 +1,5 @@
+The Streamlit app takes Recency, Frequency, and Monetary values as input and instantly classifies a customer into one of 5 behavioral segments
+— Champions, Loyal Customers, Promising/New, At Risk, or Lost/Dormant 
+— along with a recommended marketing action. 
+
+ This repo covers the full ML pipeline from raw data cleaning and RFM feature engineering to clustering with KMeans, Hierarchical, and DBSCAN, with PCA and t-SNE visualizations.
